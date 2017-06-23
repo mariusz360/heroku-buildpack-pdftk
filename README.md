@@ -1,19 +1,10 @@
 Heroku buildpack: precompiled pdftk
 ======================
 
-Based on https://github.com/millie/heroku-buildpack-phantomjs.
-For use with https://github.com/ddollar/heroku-buildpack-multi.
-
-For use in a multi buildpack:
-
-1) Configure heroku for multiple build packs.
+1) Heroku supports multiple buildpacks now so just run this command:
 
 ```
-heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
+heroku buildpacks:add --index 1 'https://github.com/pdfotter/heroku-buildpack-pdftk.git'
 ```
 
-2) Add pdftk to `.buildpacks` file
-
-```
-echo "https://github.com/shake-apps/heroku-buildpack-pdftk.git" >> .buildpacks
-```
+reference: https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app
