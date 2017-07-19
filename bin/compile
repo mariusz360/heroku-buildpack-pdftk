@@ -7,7 +7,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR=$BUILD_DIR/vendor
 
-PDFTK_URL='https://github.com/pdfotter/pdftk-source/raw/master/pdftk.tar.gz'
+PDFTK_URL='https://github.com/mariusz360/pdftk-source/raw/master/pdftk.tar.gz'
 PDFTK_DOWNLOAD=$CACHE_DIR/pdftk.tar.gz
 PDFTK_VENDOR=$BUILD_DIR/vendor/pdftk
 PDFTK_PROFILE=$BUILD_DIR/.profile.d
